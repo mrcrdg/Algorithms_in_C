@@ -11,8 +11,8 @@ int main() {
 	for (i = 200; i > 0; i--){
 		printf ("%i\n", i);
 	}
-	i == 0
-	while (i < 200){
+	i == 0;
+	while (i <= 200){
 		printf("%i\n", i);
 		i++;
 	}
