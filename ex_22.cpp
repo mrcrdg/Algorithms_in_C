@@ -1,15 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
 
-/*22.	Faça um vetor de tamanho 50 preenchido com o seguinte valor:
+/* QUEST 22.	Faça um vetor de tamanho 50 preenchido com o seguinte valor:
 (i+5 * i)%(i+1), sendo i a posição do elemento no vetor. 
 Em seguida imprima o vetor na tela.
 */
 
-main () {
+int main () {
 	
 	float vetor[5];
-	
-	int i; //contador
-	for (i = 0; i < 6; i++){
+		
+	for (int i = 0; i < 5; i++){
 			
 		vetor[i] = ((i + 5) * i)/(i + 1);
 		printf("\n");

@@ -1,47 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
 
-/*QUEST 25.	Faça um programa que leia dois vetores de 10 posições 
-e calcule outro vetor contendo, nas posições pares os valores do primeiro 
-e nas posições impares os valores do segundo.
-*/
-
-main (){
-	int primeiro[3], segundo[3];
-	int uniao[7];
-	
-	int i;
-	for (i = 0; i < 4; i++) {
-		printf("Complete the position #%i for the first vector: ", i+1);
-		scanf("%i", &primeiro[i]);	
-		printf("\n");
-	}
-	
-	for (i = 0; i < 4; i++) {
-		printf("Complete the position #%i for the second one: ", i+1);
-		scanf("%i", &segundo[i]);	
-		printf("\n");
+void ex25()	{
+	 int a[10], b[10], c[20];
+	 int i, ia, ib;
+	 ia = 0;
+	 ib = 0;
+	 
+	for (i = 0; i < 10; i++) {
+        printf("Digite o valor posicao %i", i+1);
+        scanf("%i", &a[i]);
+    }
+    for (i = 0; i < 10; i++) {
+        printf("Digite o valor posicao %i", i+1);
+        scanf("%i", &b[i]);
 	}	
-	//Falhou daqui pra baixo
-	for (i = 0; i < 8; i++) {
-		
-		if (i = 0)
-		uniao[i] = primeiro[i];
-		else
-			if (i = 1)
-			uniao[i] = segundo[i];
-			else
-				if (i % 2 == 0) 
-				uniao[i] = primeiro[i];
-				else
-					if (i % 2 != 0)
-					uniao[i] = segundo[i];							
-			
-		printf("\n");	
-	}
 	
-	for (i = 0; i < 8; i++) {
-		printf("%i", uniao[i]);
-		printf("\n");	
-	}
-	
+ 	for (i = 0; i <20; i++) {
+	 	if (i % 2 == 0) {
+	 		c[i] = a[ia];
+	 		ia++;	 		
+	 	} else {
+   		    c[i] = b[ib];
+		 	ib++;	 	
+		}  	
+ 	 printf("c[%i] = %i\n", i, c[i]); 
+    }
+}
+
+int main() 
+{
+	ex25();
 	return 0;
 }
+
+
+
+
