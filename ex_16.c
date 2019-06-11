@@ -12,8 +12,9 @@ int main (){
 	float altura;
 		
 	int i; //contador
-	int maioridade; //contador de jogadores maiores de idade
-	int menoridade; //contador de jogadores menores ou igual a 18
+	int maioridade = 0; //contador de jogadores maiores de idade
+	int menoridade = 0; //contador de jogadores menores ou igual a 18
+	
 	
 	for (i = 0; i <3; i++){
 		printf("Insira a idade do atleta %i: ", i+1);
@@ -22,9 +23,9 @@ int main (){
 		scanf("%f", &altura);
 		
 		if (idade > 18)
-			maioridade == maioridade + 1;
+			maioridade++;
 		if (idade <= 18)					
-			menoridade == menoridade + 1;
+			menoridade++;
 		
 	printf("\n");
 			
